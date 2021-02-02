@@ -1521,3 +1521,15 @@ java.io.FileNotFoundException: bin
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-01 18:39:53.646
 !MESSAGE executing callback sts4.classpath.XcnOdySq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-01 22:16:45.995
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XcnOdySq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-01 22:16:46.001
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.XcnOdySq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-01 22:16:46.007
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-02-01 22:16:46.014
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XcnOdySq => OK

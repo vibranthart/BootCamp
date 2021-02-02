@@ -8,8 +8,7 @@ public class BankApp {
 		util.newCustomer(new BankAccount(101, "Veena",1000));
 		util.newCustomer(new BankAccount(102, "Smith",2000));
 		
-		BankAccount modifiedCustomer = new BankAccount(102,"Ram",5000);
-		util.modifyCustomer(102,modifiedCustomer);
+		BankAccount modifyCustomer = new BankAccount(102,"Ram",5000);
 		
 		
 		
@@ -51,13 +50,3 @@ public class BankApp {
  * bal - 1000, 4000, 2000, 1500, 2500
  * Arrange the students by their marks and show
  */
-
-
-/*
- * Exercise
- * Remove a customer -> implement
- * get a customer
- * get all customers
- * 
- * 
- * */

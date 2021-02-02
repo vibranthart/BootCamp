@@ -1,0 +1,28 @@
+
+public class SavingAc {
+
+	private double rateofInterest;
+	
+	public SavingAc()
+	{
+		rateofInterest = 0.00;
+	}
+	
+	public SavingAc(int accNo, String name, double iRate) {
+		rateofInterest = iRate;
+	}
+	
+	public SavingAc(int accNo, String name, double amt, double iRate)
+	{
+		accNo = accNo;
+		rateofInterest = iRate;
+	}
+	
+	public double getRateofInterest() {
+		return rateofInterest;
+	}
+	
+	public void setRateofInterest(double rateofInterest) {
+		this.rateofInterest = rateofInterest;
+	}
+}

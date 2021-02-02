@@ -5,17 +5,29 @@ public class BankAccount {
 	private String name;
 	private double bal;
 	
+	public BankAccount() {
+		this(0, "", 0);
+	}
+	
+	public BankAccount(int accNo, String name, double bal) {
+		this.accNo = accNo;
+		this.name = name;
+		this.bal = bal;
+	}
+
+	public BankAccount(int accNo, String name) {
+		this(accNo, name, 0);
+	}
+	
 	//Add, Modify, remove
-	//Setter / Mutator methods
-	public void setAccNo(int no) 
-	{
+	// Setter / Mutator methods
+	private void setAccNo(int no) {
 		accNo = no;
 	}
 	
 	//Fetch data
-	//Getter / Accessor methods
-	public int getAccNo() 
-	{
+	// Getter / Accessor methods
+	public int getAccNo() {
 		return accNo;
 	}
 
@@ -31,8 +43,34 @@ public class BankAccount {
 		return bal;
 	}
 
-	public void setBal(double bal) {
-		this.bal = bal;
+	private void setBal(double bal) {
+		if(bal > 0) {
+			this.bal = bal;
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "BankAccount [accNo=" + accNo + ", name=" + name + ", bal=" + bal + "]";
 	}
 	
+	//Deposit Amount
+	public boolean deposit(double amt) {
+		if(amt < 0) {
+			return false;
+		}
+		setBal(amt + getBal());
+		return true;
+	}
+	
+	public int withdraw(double amt) {
+		if(amt < 0) {
+			return -1;
+		} else if(amt > getBal()) {
+			return 0;
+		}
+		
+		setBal(getBal() - amt);
+		return 1;
+	}
 }

@@ -1,0 +1,22 @@
+
+public class BankApp {
+	public static void main(String[] args) {
+		SavingAc sa = new SavingAc(100,"Veena",8000,0.05);
+		
+		int result  = sa.withdrawAmount(100);
+		
+		if(result == 0)
+		{
+			System.out.println("Insufficient Balance");
+		}
+		else if(result < 0)
+		{
+			System.out.println("Invalid Amount Entered");
+		}
+		else
+		{
+			System.out.println("Amount Withdrawn Successfully. Your Balance is : " + sa.getBal());
+		}
+	}
+}
+

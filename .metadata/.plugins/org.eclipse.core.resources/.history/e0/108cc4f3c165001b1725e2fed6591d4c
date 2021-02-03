@@ -5,12 +5,12 @@ public class SavingAc extends BankAccount{
 	
 	public SavingAc()
 	{
-		this("",0,0);//Calling same class constructor
+		this(0,"",0,0);//Calling same class constructor
 		rateofInterest = 0.00;
 	}
 	
-	public SavingAc(String name, double amt,double iRate) {
-		super(name,amt); // calling super class constructor
+	public SavingAc(int accNo, String name, double amt,double iRate) {
+		super(accNo,name,amt); // calling super class constructor
 		rateofInterest = iRate;
 	}
 	
@@ -22,9 +22,7 @@ public class SavingAc extends BankAccount{
 		this.rateofInterest = rateofInterest;
 	}
 	
-	//Method overriding
-	//Customized existing function
-	public int withdraw(double amt) 
+	public int withdrawAmount(double amt) 
 	{
 		if(amt < 0)
 		{
@@ -34,7 +32,5 @@ public class SavingAc extends BankAccount{
 		{
 			return 0;
 		}
-		super.withdraw(amt);
-		return 1;
 	}
 }

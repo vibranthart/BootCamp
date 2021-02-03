@@ -1,0 +1,10 @@
+
+public class BankApp {
+	public static void main(String[] args) {
+		SavingAc sa = new SavingAc(100,"Veena",1000,0.05);
+		
+		sa.withdraw(100);
+		System.out.println("Balance : " + sa.getBal());
+	}
+}
+

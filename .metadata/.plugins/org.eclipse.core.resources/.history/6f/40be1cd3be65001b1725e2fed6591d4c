@@ -32,7 +32,7 @@ public class BankUtils {
 		return false;
 	}
 	
-	public boolean removeCustomer(int accNo) 
+	public boolean removeCustomer(int accNo, BankAccount acc) 
 	{
 		for(int i=0;i<arr.length;i++)
 		{
@@ -45,7 +45,7 @@ public class BankUtils {
 		return false;
 	}
 	
-	public int getACustomer(int accNo, BankAccount acc)
+	public int printACustomer(int accNo, BankAccount acc)
 	{
 		for(int i=0;i<arr.length;i++)
 		{
@@ -57,7 +57,7 @@ public class BankUtils {
 		return 0;
 	}
 	
-	public int getAllCustomer(int accNo)
+	public int printAllCustomer(int accNo)
 	{
 		for(int i=0;i<arr.length;i++)
 		{
@@ -70,10 +70,3 @@ public class BankUtils {
 	}
 	
 }
-
-/*
- * for(BankAccount b : arr)
- * if(b.getAccNo() == accNo)
- * 
- * 
- */

@@ -36,7 +36,7 @@ public class Triangle extends Shape{
 		return height;
 	}
 	
-	public double calcArea()
+	public double calcArea(double base, double height)
 	{
 		double result =  0.5 * base * height;
 		return result;

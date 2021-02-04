@@ -3,16 +3,6 @@ public class Square extends Shape {
 	
 	private double side;
 	
-	public Square()
-	{
-		side = 0;
-	}
-	
-	public Square(double side)
-	{
-		this.side = side;
-	}
-	
 	private void setSide(double si)
 	{
 		side = si;
@@ -23,7 +13,7 @@ public class Square extends Shape {
 		return side;
 	}
 	
-	public double calcArea()
+	public double calcArea(double side)
 	{
 		double result =  side*side;
 		return result;

@@ -23,7 +23,7 @@ public class Square extends Shape {
 		return side;
 	}
 	
-	public double calcArea()
+	public double calcArea(double side)
 	{
 		double result =  side*side;
 		return result;

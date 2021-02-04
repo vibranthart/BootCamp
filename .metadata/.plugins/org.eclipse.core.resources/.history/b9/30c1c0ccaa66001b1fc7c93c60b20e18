@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class ShapeAPI {
+	public static void main(String[] args)
+	{
+		Shape shape = null;
+		
+		//Preset Values for Variables
+		double radius = 2;
+		double side = 2;
+		double base = 2;
+		double height = 2;
+		while(true)
+		{
+			Scanner myObj = new Scanner(System.in);
+			System.out.println("Select a shape:");
+			System.out.println("1 | Circle");
+			System.out.println("2 | Square");
+			System.out.println("3 | Triangle");
+			System.out.println("Enter Choice");
+			int choice = myObj.nextInt();
+			
+			switch(choice)
+			{
+			case 1 : 
+				shape = new Circle(radius);
+				double area = shape.calcArea();
+				System.out.println("Selected Shape : Circle");
+				System.out.println("Calculated Area : " + area);
+				break;
+			case 2 : 
+				shape = new Square(side);
+				double area1 = shape.calcArea();
+				System.out.println("Selected Shape : Circle");
+				System.out.println("Calculated Area : " + area1);
+				break;
+			case 3 : 
+				shape = new Triangle(base,height);
+				double area2 = shape.calcArea();
+				System.out.println("Selected Shape : Circle");
+				System.out.println("Calculated Area : " + area2);
+				break;
+			default :
+				System.out.println("ERROR: Not a choice");
+				shape = new Shape();
+				double area3 = shape.calcArea();
+				System.out.println("Calculated Area : " + area3);
+			}
+			
+			System.out.println(""); //Provides space between each loop of the run
+		}
+		
+	}
+}

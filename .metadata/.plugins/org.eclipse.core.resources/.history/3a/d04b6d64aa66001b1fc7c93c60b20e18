@@ -23,9 +23,8 @@ public class Circle extends Shape{
 		return radius;
 	}
 	
-	public double calcArea()
+	public double calcArea(double rad)
 	{
-		double rad = radius;
 		double pi = Math.PI;
 		double result =  pi * rad*rad;
 		return result;

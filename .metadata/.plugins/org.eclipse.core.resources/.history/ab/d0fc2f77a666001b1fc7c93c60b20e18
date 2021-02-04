@@ -3,16 +3,6 @@ public class Circle extends Shape{
 
 	private double radius;
 	
-	public Circle()
-	{
-		radius = 0;
-	}
-	
-	public Circle(double radius)
-	{
-		this.radius = radius;
-	}
-	
 	private void setRadius(double rad)
 	{
 		radius = rad;
@@ -23,9 +13,8 @@ public class Circle extends Shape{
 		return radius;
 	}
 	
-	public double calcArea()
+	public double calcArea(double rad)
 	{
-		double rad = radius;
 		double pi = Math.PI;
 		double result =  pi * rad*rad;
 		return result;

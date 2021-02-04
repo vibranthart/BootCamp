@@ -1,0 +1,8 @@
+
+public class Square extends Shape {
+	
+	public double calcArea(double side)
+	{
+		double result =  side*side;
+	}
+}

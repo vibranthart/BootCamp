@@ -1,0 +1,17 @@
+
+public class BankApp {
+	public static void main(String[] args) {
+		BankAccount ba = null;
+		int choice = 0;
+		
+		//Input choice from user
+		//choice = 1 -> SavingAc
+		//choice = 2 -> CurrentAc
+		choice = 1;
+		if(choice ==1 )
+		{
+			ba = new SavingAc(100,"Harish",20000,.00);
+		}
+	}
+}
+

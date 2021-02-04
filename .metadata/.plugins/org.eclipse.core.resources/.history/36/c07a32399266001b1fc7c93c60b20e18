@@ -1,0 +1,30 @@
+
+public class Shape {
+
+	
+	private int base;
+	private int height;
+	
+	
+	
+	
+	private void setBase(int ba)
+	{
+		base = ba;
+	}
+	
+	public int getBase()
+	{
+		return base;
+	}
+	
+	private void setHeight(int hei)
+	{
+		height = hei;
+	}
+	
+	public int getHeight()
+	{
+		return height;
+	}
+}

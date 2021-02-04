@@ -1,0 +1,50 @@
+
+public class Shape {
+
+	private int radius;
+	private int side;
+	private int base;
+	private int height;
+	
+	
+	private void setRadius(int rad)
+	{
+		radius = rad;
+	}
+	
+	public int getRadius() 
+	{
+		return radius;
+	}
+	
+	
+	private void setSide(int si)
+	{
+		side = si;
+	}
+	
+	public int getSide()
+	{
+		return side;
+	}
+	
+	private void setBase(int ba)
+	{
+		base = ba;
+	}
+	
+	public int getBase()
+	{
+		return base;
+	}
+	
+	private void setHeight(int hei)
+	{
+		height = hei;
+	}
+	
+	public int getHeight()
+	{
+		return height;
+	}
+}

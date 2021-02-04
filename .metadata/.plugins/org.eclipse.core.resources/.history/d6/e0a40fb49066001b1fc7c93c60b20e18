@@ -1,0 +1,28 @@
+
+public class Shape {
+
+	private int radius;
+	private int side;
+	private int base;
+	private int height;
+	
+	public int getRadius() 
+	{
+		return radius;
+	}
+	
+	public int getSide()
+	{
+		return side;
+	}
+	
+	public int getBase()
+	{
+		return base;
+	}
+	
+	public int getHeight()
+	{
+		return height;
+	}
+}

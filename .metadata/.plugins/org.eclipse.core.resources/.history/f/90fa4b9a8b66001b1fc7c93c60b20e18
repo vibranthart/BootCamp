@@ -75,5 +75,4 @@ public class BankAccount {
 		setBal(getBal() - amt);
 		return 1;
 	}
-	
 }

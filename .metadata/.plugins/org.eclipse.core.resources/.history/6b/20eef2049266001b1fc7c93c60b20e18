@@ -1,0 +1,10 @@
+
+public class Circle extends Shape{
+
+	public double calcArea(double rad)
+	{
+		double pi = Math.PI;
+		double result =  pi * rad*rad;
+		return result;
+	}
+}

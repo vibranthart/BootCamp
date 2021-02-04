@@ -1,0 +1,32 @@
+
+public class Triangle extends Shape{
+
+	private double base;
+	private double height;
+	
+	private void setBase(double ba)
+	{
+		base = ba;
+	}
+	
+	public double getBase()
+	{
+		return base;
+	}
+	
+	private double setHeight(double hei)
+	{
+		height = hei;
+	}
+	
+	public double getHeight()
+	{
+		return height;
+	}
+	
+	public double calcArea(double base, double height)
+	{
+		double result =  0.5 * base * height;
+		return result;
+	}
+}

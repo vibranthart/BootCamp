@@ -1,0 +1,12 @@
+
+public class BankApp {
+	public static void main(String[] args) {
+		SavingAc sa1 = new SavingAc("Harish",10000,0.05);
+		SavingAc sa2 = new SavingAc("Veena",33333,0.05);
+		
+		System.out.println("Account no - " + sa1.getAccNo());
+		System.out.println("Next customer acc no - " + sa2.getAccNo());
+		
+	}
+}
+

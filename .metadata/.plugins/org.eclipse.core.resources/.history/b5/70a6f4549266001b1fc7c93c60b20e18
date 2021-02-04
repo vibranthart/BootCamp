@@ -1,0 +1,9 @@
+
+public class Triangle extends Shape{
+
+	public double calcArea(double base, double height)
+	{
+		double result =  0.5 * base * height;
+		return result;
+	}
+}

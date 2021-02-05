@@ -1,7 +1,9 @@
 
 public class BankApp {
 	public static void main(String[] args) {
-		BankAccount ba = null;
+		BankAccount ba = new BankAccount();
+		
+		
 		int choice = 0;
 		
 		//Input choice from user

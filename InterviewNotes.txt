@@ -1,0 +1,55 @@
+Date: Week 2 - 2/5/21
+================================================================================================
+What is a Class?
+class contains data and its related functionality, can contains only functionality
+Not for instantiation
+
+What is an Object?
+representative of a class
+what class has object has as well - functionality and data of class
+Objects are independent of one another
+
+Why should i use contructors?
+instantiate an object -> initializes or creates an object 
+constructors are used for instantiating classes
+one folder cant keep classes with two classes
+
+classes and objects
+objections are portions of class
+objects are independent - same functionality, different data 
+
+Java compiler v/s interpreter
+compiler 	-> converts from on eformat to another -> reads & converts entire program in one go
+		-> it shows all errors
+		-> fast conversion
+		-> gives converted file 
+		-> dont need compiler next time to xompile code
+
+translator 	-> convert from on format to another -> reads & converts line by line
+		-> shows errors line by line
+		-> slow
+		-> doesnt give anything
+		-> you need everytime to run
+
+Java Code -> Compiler : transforms to bytes -> JVM : Windows/Linux/Mac
+
+JVM
+1. class loader - inserts into memory
+2. garbage collector - cant access data and throws out of memory - heap only
+3. Manages Threads
+4. Memory Management
+5. Exception(Runtime errors) handling 
+6. Interpeters - JIT (Just in Time) Compiler 
+
+
+JVM + library === JRE (Java Runtime Environment)
+JRE + Compiler == JDK (Java Development Kit)
+
+
+during inheritance, what goes in subclass from superclass??
+everything including private, but private members cant be accessible from super becauser of encapsualtion.
+
+
+
+
+

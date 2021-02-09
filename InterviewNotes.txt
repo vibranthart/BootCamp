@@ -50,6 +50,15 @@ during inheritance, what goes in subclass from superclass??
 everything including private, but private members cant be accessible from super becauser of encapsualtion.
 
 
+2/8/21 - NON-INTERVIEW
+packages
+					public		protected	default		private
+same package non-subclass		yes		yes		yes		yes
+Same package sub-class			yes		yes		yes		no
+Different package non-sub class		yes		no 		no		no
+Different package sub class		yes		yes		no 		no
+
+
 
 
 

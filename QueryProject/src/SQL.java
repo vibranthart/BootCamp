@@ -20,54 +20,58 @@ public class SQL {
 	
 	public String getProjectedField() // name, city
 	{
-		int word = "select".length();
-		int start = statement.indexOf("Select");
-	    int end = statement.indexOf("from");
-		return statement.substring(start+word,end);
+		statement = statement.toLowerCase();
+		String[] start = statement.split("select");
+		String[] end = start[1].split("from");
+		return end[0];
 	}
 	
 	public String getTableName() // get emp
 	{
-		int word = "from".length();
-		int start = statement.indexOf("from");
-	    int end = statement.indexOf("where");
-	    return statement.substring(start+word,end);
+		statement = statement.toLowerCase();
+		String[] start = statement.split("from");
+		String[] end = start[1].split("where");
+		return end[0];
 	}
 	
 	public String getConditions() // age > 20, city = New York
 	{
-		int word = "where".length();
-		int start = statement.indexOf("where");
-	    int end = statement.indexOf("order");
-	    return statement.substring(start+word,end);
+		statement = statement.toLowerCase();
+		String[] start = statement.split("where");
+		String[] end = start[1].split("order by");
+		return end[0];
 	}
 	
 	public String getLogicalOperator() // words such as and
 	{
-		if(statement.contains("and")) {
-			return " and";
-		} else if(statement.contains("or")) {
-			return " or";
+		if(statement.contains("and"))
+		{
+			return "and";
 		}
-		return " unknown";
+		else if(statement.contains("or"))
+		{
+			return "or";
+		}
+		else 
+		{
+			return "unknown";
+		}
 	}
 	
 	public String getOrder() // order by name
 	{
-		int start = statement.indexOf("order");
-	    int end = statement.length();
-	    return statement.substring(start+8,end);
+		statement = statement.toLowerCase();
+		String[] start = statement.split("order by");
+		String[] end = start[1].split(" ");
+		return end[0];
 	}
 	
 	public String getMainQuery()
 	{
-		int start = statement.indexOf("order");
-	    int end = statement.indexOf(getConditions())-5;
-	    return statement.substring(0,end);
+		statement = statement.toLowerCase();
+		String[] start = statement.split("order");
+		String[] end = start[1].split(" ");
+		return end[0];
 	}
-	
-	
-	
-	
 	
 }

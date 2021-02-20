@@ -53,6 +53,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\java-hackathon"/>
 			<item value="D:\BootCamp"/>
 			<item value="C:\Users\hart_\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\Exercises"/>
 		</list>

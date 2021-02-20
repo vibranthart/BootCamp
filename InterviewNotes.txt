@@ -58,7 +58,25 @@ Same package sub-class			yes		yes		yes		no
 Different package non-sub class		yes		no 		no		no
 Different package sub class		yes		yes		no 		no
 
+======================================================================================
+2/19/21
 
+function package
+predicate
+consumer
+function
+supplier
+stream API
+------------------------------
+
+interface - FunctionalInterface
+FunctionalInterfaces -> ensures that an interface has exactly one abstract method
+List of Integers -> filter all elements which are positive numbers
+Predicate -> It checks a condition and return boolean - boolean test (T t) - abstract method
+Consumer -> which accepts an argument and do not return anything - void accept (T t)
+Supplier -> Do not accept any argument but return a value - T get()
+Function => Accept Argument and return of value - R apply (T t)
+void m(); -> Dont use because it doesnt accept anything or return anything
 
 
 

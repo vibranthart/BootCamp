@@ -75,8 +75,58 @@ List of Integers -> filter all elements which are positive numbers
 Predicate -> It checks a condition and return boolean - boolean test (T t) - abstract method
 Consumer -> which accepts an argument and do not return anything - void accept (T t)
 Supplier -> Do not accept any argument but return a value - T get()
-Function => Accept Argument and return of value - R apply (T t)
+Function => Accept Argument and return of value - R apply (T t) - one type to another 
 void m(); -> Dont use because it doesnt accept anything or return anything
 
+stream -> group of elements 
+	  supports parallel and aggregation operation
+pipeline operation -> intermediate operation done one stream 
+		      .stream(), .limit(#)
+termination -> The process ends here
+ 
+-------------------------------------------------------------\
+RDBMS - relational data base management system 
 
+Data -> Raw facts, figures, numbers onbasis one can not make a decision
 
+34
+cars
+cow
+
+Information - Process data
+	      basis one can make decision
+	34 cars - information
+	cars cows - data
+
+DataBase/Table - Structured data store
+	Data stored in rows and columns format
+
+RDBMS - MySQL, Oracle, SQL, Server, DB/2
+
+Primary Field - pairs values, cant have account wihtout bank account
+		field with unique values
+		non-null values
+		constraints
+
+DML - DATA MAnipulation Language
+
+Insert
+Update
+Delete
+
+DDL - Data Definition/Description Language
+
+CREATE TABLE
+ALTER DATABASE
+DROP DATABASE
+CREATE DATABASE
+SHOW DATABASE
+DROP DATABASE
+USE DATABASE
+
+--------------------------------
+Select field1, field2,..../*
+From tablename
+where condition
+order by field1 ascending/descending
+group by field1
